@@ -4,7 +4,7 @@ Sub AllFiles()
     Dim filename As String
     Dim wb As Workbook
     
-    folderPath = "\\DSUS061-NT0001\KEKEL1$\Desktop\NAFTA Sup Rpts\Raw Sup Rpts\"
+    folderPath = "RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
     
     If Right(folderPath, 1) <> "\" Then folderPath = folderPath + "\"
     

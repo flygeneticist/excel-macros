@@ -213,8 +213,8 @@ Public Sub NewRequestSupplierEmails()
                 .CC = ""
                 .BCC = ""
                 .Subject = SupName & " - Textile Confirmation Request"
-                .HTMLBody = "<HTML><BODY><div><p>Dear " + SupContactName + ",</p><p>Please fill out the attached form with the full company name and address for the raw material (where the fabric was woven) and the manufacturer (where the good was assembled or finished) along with the actual processes for the following  articles/supplier.</p><p>Please note that this form is required to be filled out and  valid for 1 calendar year. We will only request the information when the form has expired at the end of the year.</p><p>***Please note that any time during the year the information provided on the form has changed you MUST provide a new form.***</p></div><div>" + HeadersRange + RangetoHTML(DataToSend) + "</div><div><p>Thank you for your cooperation.</p><p>Best regards,</p><p>Kevin Keller<br>Compliance Coordinator<br>IKEA Distribution Services Inc.<br>Phone: (609)261-1208 x2244</p></div></BODY></HTML>"
-                .Attachments.Add ("\\DSUS061-FS0001.ikea.com\Common_A\Compliance\Customs Compliance NA\Textile MID\Textile Declaration Template\2014_Textile Declaration Form.xlsx")
+                .HTMLBody = "<HTML><BODY><div><p>Dear " + SupContactName + "</p><p>Please fill out the attached form <p>Best regards,</p><p>Kevin Keller<br></p></div></BODY></HTML>"
+                .Attachments.Add ("RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$")
                 '.Display ' display the e-mail message.
                 .Save ' saves the message for later editing
                 '.Send ' sends the e-mail message (puts it in the Outbox)
@@ -310,8 +310,8 @@ Public Sub FollowupRequestSupplierEmails()
                 .CC = ""
                 .BCC = ""
                 .Subject = SupName & " - Textile Confirmation Request"
-                .HTMLBody = "<HTML><BODY><div><p>Dear " & SupContactName & ",</p><p>I have still not received a completed textiles form for the articles originally sent out to you on " & SentDate & ". It is imperative that we have these forms completed to comply with US Customs' regulations. I have re-attached the blank form to this email. Please see the requested articles shown below:</p></div><div>" + HeadersRange + RangetoHTML(DataToSend) + "</div><div><p>If you will not be producing these articles, or not shipping them to the US, please let me know so that I can stop following up, as a textiles form would not be needed in those cases. However, if these articles will be shipped to the US, please send me the completed form ASAP. Thank you!</p><p>Best regards,</p><p>Kevin Keller<br>Compliance Coordinator<br>IKEA Distribution Services Inc.<br>Phone: (609)261-1208 x2244</p></div></BODY></HTML>"
-                .Attachments.Add ("\\DSUS061-FS0001.ikea.com\Common_A\Compliance\Customs Compliance NA\Textile MID\Textile Declaration Template\2014_Textile Declaration Form.xlsx")
+                .HTMLBody = "<HTML><BODY><div><p>Dear " & SupContactName & ",</p><p>Kevin Keller<br>Compliance Coordinator<br></p></div></BODY></HTML>"
+                .Attachments.Add ("RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$")
                 '.Display ' display the e-mail message.
                 .Save ' saves the message for later editing
                 '.Send ' sends the e-mail message (puts it in the Outbox)

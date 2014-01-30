@@ -159,7 +159,7 @@ Public Sub CA_IMS_InvoicePrep()
     ' execute LOOKUPS into the invoice from the Access Database
     ' in foreign wb
     Dim SourceDataWB
-    Workbooks.Open ("\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\DataExport.xlsx")
+    Workbooks.Open ("RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$")
     SourceDataWB = ActiveWorkbook.Name
     lastrow = Worksheets(1).Range("A" & Rows.Count).End(xlUp).Row
     Columns("B:B").Select
@@ -185,7 +185,7 @@ Public Sub CA_IMS_InvoicePrep()
     Columns("F:F").Select
     Selection.NumberFormat = "General"
     Range("F2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[6],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C8,7,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[6],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C8,7,0)"
     Selection.AutoFill Destination:=Range("F2:F" & lastrow), Type:=xlFillDefault
     Range("F2:F" & lastrow).Select
     Selection.Copy
@@ -198,66 +198,66 @@ Public Sub CA_IMS_InvoicePrep()
     Range("M1").Select
     ActiveCell.FormulaR1C1 = "Cust_Descrip"
     Range("M2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-1],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,5,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-1],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,5,0)"
     ' other description
     Range("N1").Select
     ActiveCell.FormulaR1C1 = "Other_Descrip"
     Range("N2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-2],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,37,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-2],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,37,0)"
     ' vendor name
     Range("O1").Select
     ActiveCell.FormulaR1C1 = "Vendor_Name"
     Range("O2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-3],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,6,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-3],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,6,0)"
     ' CA ruling no/date
     Range("P1").Select
     ActiveCell.FormulaR1C1 = "Ruling_No"
     Range("P2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-4],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,8,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-4],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,8,0)"
     Range("Q1").Select
     ActiveCell.FormulaR1C1 = "Ruling_Date"
     Range("Q2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-5],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,9,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-5],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,9,0)"
     ' CA Notes + notes_date
     Range("R1").Select
     ActiveCell.FormulaR1C1 = "Notes"
     Range("R2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-6],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,10,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-6],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,10,0)"
     Range("S1").Select
     ActiveCell.FormulaR1C1 = "Notes_Date"
     Range("S2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-7],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,11,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-7],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,11,0)"
     ' CA Sigma
     Range("T1").Select
     ActiveCell.FormulaR1C1 = "SIMA"
     Range("T2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-8],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,17,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-8],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,17,0)"
     ' CA ADD Info (date,case_no,rate)
     Range("U1").Select
     ActiveCell.FormulaR1C1 = "ADD_Date"
     Range("U2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-9],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,18,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-9],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,18,0)"
     Range("V1").Select
     ActiveCell.FormulaR1C1 = "ADD_Case_No"
     Range("V2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-10],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,19,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-10],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,19,0)"
     Range("W1").Select
     ActiveCell.FormulaR1C1 = "ADD_Rate"
     Range("W2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-11],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,20,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-11],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,20,0)"
     ' CA CVD Info (date,case_no,rate)
     Range("X1").Select
     ActiveCell.FormulaR1C1 = "CVD_Date"
     Range("X2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-12],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,21,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-12],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,21,0)"
     Range("Y1").Select
     ActiveCell.FormulaR1C1 = "CVD_Case_No"
     Range("Y2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-13],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,22,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-13],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,22,0)"
     Range("Z1").Select
     ActiveCell.FormulaR1C1 = "CVD_Rate"
     Range("Z2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-14],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,23,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-14],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,23,0)"
 
     ' perform vlookups for all invoice rows and then remove formulas via copy paste special
     Range("M2:Z2").Select
@@ -275,15 +275,15 @@ Public Sub CA_IMS_InvoicePrep()
     Range("K1").Select
     ActiveCell.FormulaR1C1 = "Access Article Description"
     Range("K2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[3],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,4,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[3],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,4,0)"
     Range("L1").Select
     ActiveCell.FormulaR1C1 = "Classified By"
     Range("L2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[2],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,31,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[2],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,31,0)"
     Range("M1").Select
     ActiveCell.FormulaR1C1 = "Classified On"
     Range("M2").Select
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[1],'\\DSCA030-NT0001.ikea.com\Common\Douanes2\Manual imports NA_Access Log\Src\[DataExport.xlsx]Export Milgram'!C2:C40,32,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[1],'RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$'!C2:C40,32,0)"
     Range("K2:M2").Select
     Selection.AutoFill Destination:=Range("K2:M" & lastrow), Type:=xlFillDefault
     Columns("K:M").Select

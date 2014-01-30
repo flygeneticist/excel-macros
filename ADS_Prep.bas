@@ -8,9 +8,9 @@ Sub ADS_Prep()
     Dim ADSwb As Workbook
     Dim ArtList
     
-    folderPath = "\\DSUS061-NT0002.ikea.com\Common\Compliance\Customs Compliance NA\NAFTA\ADS Prep Files\NAFTA_Sup_ADS_Art\"
-    ADSPath = "\\DSUS061-NT0001\KEKEL1$\Desktop\NAFTA Sup Rpts\Article Detail Sheet BLANKET FORM.xlsx"
-    FinishedPath = "\\DSUS061-NT0002.ikea.com\Common\Compliance\Customs Compliance NA\NAFTA\ADS Prep Files\NAFTA_Sup_ADS_Art\Completed ADS\"
+    folderPath = "RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
+    ADSPath = "RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
+    FinishedPath = "\RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
     filename = Dir(folderPath & "*.xlsx")
     Do While filename <> ""
       Application.ScreenUpdating = False

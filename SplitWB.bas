@@ -10,7 +10,7 @@ Dim ws As Worksheet, MyArr As Variant, vTitles As String, SvPath As String
    Set ws = Sheets(1)
 
 'Path to save files into (remember the final '\'!)
-    SvPath = "\\DSUS061-NT0002.ikea.com\Common\Compliance\Customs Compliance NA\NAFTA\ADS Prep Files\NAFTA_Sup_ADS_Art\"
+    SvPath = "RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
 
 'Range where titles are across top of data, as string, data MUST
 'have titles in this row, edit to suit your titles locale

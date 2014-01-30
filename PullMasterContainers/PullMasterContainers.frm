@@ -39,11 +39,11 @@ Private Sub UserForm_Initialize()
     ' grab the user's ID from the OS system environment
     SpecialistInitials = (Environ$("Username"))
     ' setup vars inital state(s)
-    passwrd = "bs007"
+    passwrd = "RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
     ' setup current date var
     currdate = Date
     ' PATH TO THE MASTER SPREADSHEET. BE SURE TO EDIT IF MASTER IS MOVED ELSEWHERE!
-    fpath(1) = "\\DSUS061-FS0001\KEKEL1$\Desktop\BS MasterFY13.xlsx"
+    fpath(1) = "RFEGSWBE$TS%EYBE$^^$@#$SDZVDFGNTY#W$"
 End Sub
 
 Private Sub ContainersToPullField_Change()
